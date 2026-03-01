@@ -1,4 +1,12 @@
-*-bak
-fp-info-cache
 gerbers
 *.zip
+*.000
+*.bak
+*.bck
+*~
+*_autosave-*
+*.tmp
+*.lck
+fp-info-cache
+*-cache*
+*.kicad_prl
