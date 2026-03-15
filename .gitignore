@@ -1,12 +1,62 @@
-gerbers
-*.zip
+# Temporary files
 *.000
 *.bak
 *.bck
+*.kicad_pcb-bak
+*.kicad_sch-bak
 *~
-*_autosave-*
+_autosave-*
 *.tmp
-*.lck
+*-rescue.lib
+*-save.pro
+*-save.kicad_pcb
+
+# Cache files
 fp-info-cache
-*-cache*
-*.kicad_prl
+*.lck
+
+# Netlist files (exported from Eeschema)
+*.net
+
+# Autorouter files (exported from Pcbnew)
+*-autorouter.*
+
+# Gerbers and other manufacturing files
+/gerbers/
+/manufacturing/
+/plots/
+/temp/
+
+# Crash dump files
+*.dmp
+
+# Eeschema specific files
+#
+# Deliberately kept in version control:
+#   * Fps*.pretty (footprints libraries)
+#   * Sym-Lib*.pretty (symbols libraries)
+#   * 3Dmodels (3D models)
+#   * *.dcm (component documentation - legacy)
+#   * *.lib (schematic library - legacy)
+#   * *.kicad_sym (schematic library)
+
+# Pcbnew specific files
+#
+# Deliberately kept in version control:
+#   * *.kicad_mod (footprint file - legacy)
+#   * *.kicad_pcb (board file)
+#   * *.pretty (footprint library folder)
+#   * *.drc (DRC rules file)
+
+# Project specific files
+#
+# Deliberately kept in version control:
+#   * *.kicad_pro (project file)
+#   * *.kicad_sch (schematic file)
+#   * *.rpts (report files, optional)
+#   * *.csv (BOM files, optional)
+
+
+
+*-backups
+*.swp
