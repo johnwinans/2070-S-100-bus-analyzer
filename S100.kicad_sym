@@ -450,7 +450,7 @@
 			(pin passive line
 				(at -11.43 7.62 0)
 				(length 2.54)
-				(name "~{ADBB}"
+				(name "~{ADSB}"
 					(effects
 						(font
 							(size 1.27 1.27)
