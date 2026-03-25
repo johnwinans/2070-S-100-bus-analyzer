@@ -1,1 +1,6 @@
 (version 1)
+
+(rule "Pad to Pad Clearance"
+  (constraint clearance (min 0.15mm))
+  (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.Net != B.Net")
+)
