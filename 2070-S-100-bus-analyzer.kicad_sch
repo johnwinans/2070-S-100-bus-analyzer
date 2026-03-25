@@ -28296,7 +28296,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6722/CP-2X_D1.pdf"
 			(at 547.37 360.68 0)
 			(effects
 				(font
@@ -34672,7 +34672,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6722/CP-2X_D1.pdf"
 			(at 547.37 353.06 0)
 			(effects
 				(font
