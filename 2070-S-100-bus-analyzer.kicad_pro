@@ -213,7 +213,10 @@
       ],
       "track_widths": [
         0.0,
-        0.1524
+        0.1524,
+        0.2032,
+        0.508,
+        0.762
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -245,6 +248,18 @@
         {
           "diameter": 0.0,
           "drill": 0.0
+        },
+        {
+          "diameter": 0.6,
+          "drill": 0.4
+        },
+        {
+          "diameter": 0.8,
+          "drill": 0.4
+        },
+        {
+          "diameter": 2.0,
+          "drill": 1.5
         }
       ],
       "zones_allow_external_fillets": true
@@ -265,7 +280,24 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "lib_symbol_issues|2959100|3581400|fe8b5c7d-14c0-42a5-8e09-03a173528a1c|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "pin_to_pin|1333500|2641600|541d7d49-c73a-4158-8467-8684460d63f2|399158dc-803d-49e3-91e8-bae3bc4ac5b0|/e6802e0a-d78e-48fb-9644-7dc83bb4bf35|/e6802e0a-d78e-48fb-9644-7dc83bb4bf35|/e6802e0a-d78e-48fb-9644-7dc83bb4bf35",
+        ""
+      ],
+      [
+        "pin_to_pin|1371600|1574800|b029cdc4-399f-4a4c-aba8-cc674c49ac5a|ea06dc7a-0a88-49dc-984e-82fa8e48fbc2|/e6802e0a-d78e-48fb-9644-7dc83bb4bf35|/e6802e0a-d78e-48fb-9644-7dc83bb4bf35|/e6802e0a-d78e-48fb-9644-7dc83bb4bf35",
+        ""
+      ],
+      [
+        "pin_to_pin|1371600|330200|081db5fe-5ef2-432c-94ec-7424fbc128b4|4531335d-b637-46a4-850d-9f5693e10e51|/e6802e0a-d78e-48fb-9644-7dc83bb4bf35|/e6802e0a-d78e-48fb-9644-7dc83bb4bf35|/e6802e0a-d78e-48fb-9644-7dc83bb4bf35",
+        ""
+      ]
+    ],
     "meta": {
       "version": 0
     },
