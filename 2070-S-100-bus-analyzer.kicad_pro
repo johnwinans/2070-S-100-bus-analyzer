@@ -60,6 +60,42 @@
       ],
       "drc_exclusions": [
         [
+          "clearance|196494400|32847600|282d31bd-aab4-43f0-a39a-5c0f3c198f00|e079e926-3e65-4991-85fe-929aec15ca04",
+          ""
+        ],
+        [
+          "clearance|196494400|33213400|282d31bd-aab4-43f0-a39a-5c0f3c198f00|5aecd50f-6fd7-440b-9f96-149af30897ef",
+          ""
+        ],
+        [
+          "clearance|197294400|33213400|027b48e4-62fc-4e2a-aeee-ac65d46d7b28|ecda82d9-fa19-4240-9ed7-4c102d283dc1",
+          ""
+        ],
+        [
+          "clearance|198369400|32288400|d82a1ade-dfbf-45e1-bf0f-83f24b8203f1|ab4dafc9-36d6-4b7c-be5d-fda621c8614a",
+          ""
+        ],
+        [
+          "clearance|199219400|32288400|e57b6bde-4a77-4172-bef3-8b4b38464062|ab4dafc9-36d6-4b7c-be5d-fda621c8614a",
+          ""
+        ],
+        [
+          "clearance|199719400|32288400|875c3349-e9e4-4c58-a555-e7f377e9a861|e57b6bde-4a77-4172-bef3-8b4b38464062",
+          ""
+        ],
+        [
+          "clearance|199869400|32288400|875c3349-e9e4-4c58-a555-e7f377e9a861|64d9be98-b593-4268-8eb5-014d53eb58c4",
+          ""
+        ],
+        [
+          "clearance|200369400|33288400|64d9be98-b593-4268-8eb5-014d53eb58c4|65e93b75-3aa0-4568-883d-c14d5fa3a222",
+          ""
+        ],
+        [
+          "clearance|202594400|33213400|b6dea9c9-3a90-4334-a73f-3c91ebbec0a6|c2050c11-4da5-4a52-851c-cb95e85550f1",
+          ""
+        ],
+        [
           "courtyards_overlap|119139000|128283000|2af8722d-5133-44bf-b4d3-d4fdc48c540d|8997d37e-d345-43c2-b197-0f168ca5c218",
           ""
         ],
@@ -186,7 +222,7 @@
           "td_maxlen": 0.508,
           "td_on_pad_in_zone": false,
           "td_target_name": "td_round_shape",
-          "td_width_to_size_filter_ratio": 0.9
+          "td_width_to_size_filter_ratio": 1.0
         },
         {
           "td_allow_use_two_tracks": true,
@@ -197,7 +233,7 @@
           "td_maxlen": 0.508,
           "td_on_pad_in_zone": false,
           "td_target_name": "td_rect_shape",
-          "td_width_to_size_filter_ratio": 0.9
+          "td_width_to_size_filter_ratio": 1.0
         },
         {
           "td_allow_use_two_tracks": true,
@@ -208,7 +244,7 @@
           "td_maxlen": 0.508,
           "td_on_pad_in_zone": false,
           "td_target_name": "td_track_end",
-          "td_width_to_size_filter_ratio": 0.9
+          "td_width_to_size_filter_ratio": 1.0
         }
       ],
       "track_widths": [
@@ -254,12 +290,12 @@
           "drill": 0.4
         },
         {
-          "diameter": 0.8,
-          "drill": 0.4
+          "diameter": 0.762,
+          "drill": 0.508
         },
         {
-          "diameter": 2.0,
-          "drill": 1.5
+          "diameter": 0.8,
+          "drill": 0.4
         }
       ],
       "zones_allow_external_fillets": true
