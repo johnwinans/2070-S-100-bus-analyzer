@@ -21072,7 +21072,7 @@
 				)
 			)
 		)
-		(property "Value" "8K4"
+		(property "Value" "158K"
 			(at 339.09 377.19 90)
 			(effects
 				(font
@@ -21089,7 +21089,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RT_1-TO-0-01_ROHS_L"
 			(at 339.09 377.19 0)
 			(effects
 				(font
@@ -21098,7 +21098,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RES 8.45K OHM 1% 1/10W 0603"
+		(property "Description" "RES SMD 158K OHM 1% 1/10W 0603"
 			(at 339.09 377.19 0)
 			(effects
 				(font
@@ -21107,7 +21107,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key_PN" "RMCF0603FT8K45CT-ND"
+		(property "Digi-Key_PN" "13-RT0603FRE07158KLCT-ND"
 			(at 339.09 377.19 0)
 			(effects
 				(font
@@ -21116,7 +21116,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RMCF0603FT8K45"
+		(property "MPN" "RT0603FRE07158KL"
 			(at 339.09 377.19 0)
 			(effects
 				(font
@@ -21125,7 +21125,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Stackpole Electronics Inc"
+		(property "Manufacturer" "YAGEO"
 			(at 339.09 377.19 0)
 			(effects
 				(font
@@ -21166,7 +21166,7 @@
 				)
 			)
 		)
-		(property "Value" "1K6"
+		(property "Value" "30K1"
 			(at 339.09 387.35 90)
 			(effects
 				(font
@@ -21183,7 +21183,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RT_1-TO-0-01_ROHS_L"
 			(at 339.09 387.35 0)
 			(effects
 				(font
@@ -21192,7 +21192,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RES 1.6K OHM 1% 1/10W 0603"
+		(property "Description" "RES SMD 30.1K OHM 1% 1/10W 0603"
 			(at 339.09 387.35 0)
 			(effects
 				(font
@@ -21201,7 +21201,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key_PN" "RMCF0603FT1K60CT-ND"
+		(property "Digi-Key_PN" "13-RT0603FRE0730K1LCT-ND"
 			(at 339.09 387.35 0)
 			(effects
 				(font
@@ -21210,7 +21210,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RMCF0603FT1K60"
+		(property "MPN" "RT0603FRE0730K1L"
 			(at 339.09 387.35 0)
 			(effects
 				(font
@@ -21219,7 +21219,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Stackpole Electronics Inc"
+		(property "Manufacturer" ""
 			(at 339.09 387.35 0)
 			(effects
 				(font
