@@ -21370,7 +21370,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "YAGEO"
 			(at 339.09 387.35 0)
 			(effects
 				(font
@@ -21430,7 +21430,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_commercial_general_en.pdf"
 			(at 261.62 372.11 0)
 			(effects
 				(font
@@ -21439,7 +21439,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "22UF 25V X5R"
+		(property "Description" "CAP CER 22UF 35V X5R 0805"
 			(at 261.62 372.11 0)
 			(effects
 				(font
@@ -21457,7 +21457,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "C2012X5R1V226M125AC"
 			(at 261.62 372.11 0)
 			(effects
 				(font
@@ -21466,7 +21466,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "TDK"
 			(at 261.62 372.11 0)
 			(effects
 				(font
@@ -21526,7 +21526,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_commercial_general_en.pdf"
 			(at 250.19 372.11 0)
 			(effects
 				(font
@@ -21535,7 +21535,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "22UF 25V X5R"
+		(property "Description" "CAP CER 22UF 35V X5R 0805"
 			(at 250.19 372.11 0)
 			(effects
 				(font
@@ -21553,7 +21553,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "C2012X5R1V226M125AC"
 			(at 250.19 372.11 0)
 			(effects
 				(font
@@ -21562,7 +21562,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "TDK"
 			(at 250.19 372.11 0)
 			(effects
 				(font
@@ -21750,7 +21750,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 149.86 363.22 0)
 			(effects
 				(font
@@ -21846,7 +21846,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/609/CL10C470JB8NNNC_Spec.pdf"
 			(at 327.66 377.19 0)
 			(effects
 				(font
@@ -21855,7 +21855,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CAP CER 47PF 50V C0G/NP0 0603"
 			(at 327.66 377.19 0)
 			(effects
 				(font
@@ -21864,7 +21864,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key_PN" ""
+		(property "Digi-Key_PN" "1276-1037-1-ND"
 			(at 327.66 377.19 0)
 			(effects
 				(font
@@ -21873,7 +21873,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CL10C470JB8NNNC"
 			(at 327.66 377.19 0)
 			(effects
 				(font
@@ -21882,7 +21882,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 327.66 377.19 0)
 			(effects
 				(font
@@ -22084,7 +22084,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
+		(property "Value" "10uF 25V"
 			(at 267.97 374.904 0)
 			(effects
 				(font
@@ -22102,7 +22102,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/4888/TMK212BBJ106KG-T_SS.pdf"
 			(at 273.05 372.11 0)
 			(effects
 				(font
@@ -22111,7 +22111,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CAP CER 10UF 25V X5R 0805"
 			(at 273.05 372.11 0)
 			(effects
 				(font
@@ -22120,7 +22120,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key_PN" ""
+		(property "Digi-Key_PN" "587-2985-1-ND"
 			(at 283.21 378.46 0)
 			(effects
 				(font
@@ -22129,7 +22129,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "TMK212BBJ106KG-T"
 			(at 273.05 372.11 0)
 			(effects
 				(font
@@ -22138,7 +22138,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "Taiyo Yuden"
 			(at 273.05 372.11 0)
 			(effects
 				(font
@@ -22196,7 +22196,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://product.tdk.com/en/system/files?file=dam/doc/product/inductor/inductor/smd/catalog/inductor_commercial_power_vls6045ex_en.pdf"
 			(at 321.31 372.11 0)
 			(effects
 				(font
@@ -22549,7 +22549,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR61A226ME44-01.pdf"
 			(at 346.71 375.92 0)
 			(effects
 				(font
@@ -22710,7 +22710,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR61A226ME44-01.pdf"
 			(at 356.87 375.92 0)
 			(effects
 				(font
@@ -22880,7 +22880,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "8-Bit Single-Supply Bus Transceiver With 5V tolerant input voltage and 3-State Outputs 24mA, TSSOP-20"
+		(property "Description" "IC TXRX NON-INVERT 3.6V 20-TSSOP"
 			(at 452.12 62.23 0)
 			(effects
 				(font
@@ -22890,6 +22890,24 @@
 			)
 		)
 		(property "Digi-Key_PN" "1727-4041-1-ND"
+			(at 452.12 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "74LVCH245APW,118"
+			(at 452.12 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Nexperia USA Inc."
 			(at 452.12 62.23 0)
 			(effects
 				(font
@@ -23013,8 +23031,35 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Versatile and inexpensive microcontroller module powered by RP2040 dual-core Arm Cortex-M0+ processor up to 133 MHz, 264kB SRAM, 2MB QSPI flash; also supports Raspberry Pi Pico 2"
+		(property "Description" "RASPBERRY PI PICO 2 RP2350"
 			(at 406.4 287.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key_PN" "2648-SC1631CT-ND"
+			(at 406.4 234.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "2648-SC1631CT-ND"
+			(at 406.4 234.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Raspberry Pi"
+			(at 406.4 234.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23186,7 +23231,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://look.ams-osram.com/m/2da6f2ceeebf8fac/original/LG-R971.pdf"
 			(at 140.97 363.22 0)
 			(effects
 				(font
@@ -23195,7 +23240,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode, filled shape"
+		(property "Description" "LED GREEN DIFFUSED 0805 SMD"
 			(at 140.97 363.22 0)
 			(effects
 				(font
@@ -23206,6 +23251,33 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 139.3825 359.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key_PN" "475-LGR971-KN-1CT-ND"
+			(at 140.97 363.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "LG R971-KN-1-0-20-R18"
+			(at 140.97 363.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "ams-OSRAM USA INC."
+			(at 140.97 363.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23358,7 +23430,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 149.86 339.09 0)
 			(effects
 				(font
@@ -23453,7 +23525,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6808/SS56F%20SMAF.PDF"
 			(at 487.68 347.98 0)
 			(effects
 				(font
@@ -23462,7 +23534,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Schottky diode, filled shape"
+		(property "Description" "60V INDEPENDENT TYPE 700MV@5A 5A"
 			(at 487.68 347.98 0)
 			(effects
 				(font
@@ -23472,6 +23544,24 @@
 			)
 		)
 		(property "Digi-Key_PN" "5399-SS56FCT-ND"
+			(at 487.68 347.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SS56F"
+			(at 487.68 347.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Shenzhen Slkormicro Semicon Co., Ltd."
 			(at 487.68 347.98 0)
 			(effects
 				(font
@@ -23907,7 +23997,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "8-Bit Single-Supply Bus Transceiver With 5V tolerant input voltage and 3-State Outputs 24mA, TSSOP-20"
+		(property "Description" "IC TXRX NON-INVERT 3.6V 20-TSSOP"
 			(at 452.12 138.43 0)
 			(effects
 				(font
@@ -23917,6 +24007,24 @@
 			)
 		)
 		(property "Digi-Key_PN" "1727-4041-1-ND"
+			(at 452.12 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "74LVCH245APW,118"
+			(at 452.12 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Nexperia USA Inc."
 			(at 452.12 138.43 0)
 			(effects
 				(font
@@ -24759,7 +24867,7 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" "S-100 Edge Connector"
 			(at 148.59 29.21 0)
 			(effects
 				(font
@@ -26015,7 +26123,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 477.52 186.69 0)
 			(effects
 				(font
@@ -26120,7 +26228,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "8-Bit Single-Supply Bus Transceiver With 5V tolerant input voltage and 3-State Outputs 24mA, TSSOP-20"
+		(property "Description" "IC TXRX NON-INVERT 3.6V 20-TSSOP"
 			(at 486.41 285.75 0)
 			(effects
 				(font
@@ -26130,6 +26238,24 @@
 			)
 		)
 		(property "Digi-Key_PN" "1727-4041-1-ND"
+			(at 486.41 285.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "74LVCH245APW,118"
+			(at 486.41 285.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Nexperia USA Inc."
 			(at 486.41 285.75 0)
 			(effects
 				(font
@@ -26309,7 +26435,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.koaspeer.com/pdfs/RC.pdf"
 			(at 298.45 49.53 0)
 			(effects
 				(font
@@ -26318,7 +26444,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "test point"
+		(property "Description" "PC TEST POINT"
+			(at 293.37 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key_PN" "2019-RCWCTECT-ND"
+			(at 293.37 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RCWCTE"
+			(at 293.37 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KOA Speer Electronics, Inc."
 			(at 293.37 49.53 0)
 			(effects
 				(font
@@ -26374,7 +26527,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://look.ams-osram.com/m/2da6f2ceeebf8fac/original/LG-R971.pdf"
 			(at 140.97 339.09 0)
 			(effects
 				(font
@@ -26383,7 +26536,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode, filled shape"
+		(property "Description" "LED GREEN DIFFUSED 0805 SMD"
 			(at 140.97 339.09 0)
 			(effects
 				(font
@@ -26394,6 +26547,33 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 139.3825 335.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key_PN" "475-LGR971-KN-1CT-ND"
+			(at 140.97 339.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "LG R971-KN-1-0-20-R18"
+			(at 140.97 339.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "ams-OSRAM USA INC."
+			(at 140.97 339.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26914,6 +27094,24 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "LMS78_05-2.0RL"
+			(at 294.64 344.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "GAPTEC Electronic"
+			(at 294.64 344.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a5728360-4811-4be6-af31-7609f7317633")
 		)
@@ -26966,7 +27164,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 443.23 39.37 0)
 			(effects
 				(font
@@ -27061,7 +27259,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/6808/SS56F%20SMAF.PDF"
 			(at 379.73 386.08 0)
 			(effects
 				(font
@@ -27070,7 +27268,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Schottky diode, filled shape"
+		(property "Description" "60V INDEPENDENT TYPE 700MV@5A 5A"
 			(at 379.73 386.08 0)
 			(effects
 				(font
@@ -27080,6 +27278,24 @@
 			)
 		)
 		(property "Digi-Key_PN" "5399-SS56FCT-ND"
+			(at 379.73 386.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SS56F"
+			(at 379.73 386.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Shenzhen Slkormicro Semicon Co., Ltd."
 			(at 379.73 386.08 0)
 			(effects
 				(font
@@ -27808,7 +28024,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 411.48 36.83 0)
 			(effects
 				(font
@@ -27904,7 +28120,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=Tactile_Switches&DocType=Data%20Sheet&DocLang=English&DocFormat=pdf&PartCntxt=1-1825910-5"
 			(at 83.82 342.9 0)
 			(effects
 				(font
@@ -27913,7 +28129,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "SWITCH TACTILE SPST-NO 0.05A 24V"
+			(at 83.82 350.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key_PN" "450-1940-ND"
+			(at 83.82 350.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "1-1825910-5"
+			(at 83.82 350.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "TE Connectivity ALCOSWITCH Switches"
 			(at 83.82 350.52 0)
 			(effects
 				(font
@@ -28177,7 +28420,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 149.86 350.52 0)
 			(effects
 				(font
@@ -28283,8 +28526,35 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Versatile and inexpensive microcontroller module powered by RP2040 dual-core Arm Cortex-M0+ processor up to 133 MHz, 264kB SRAM, 2MB QSPI flash; also supports Raspberry Pi Pico 2"
+		(property "Description" "RASPBERRY PI PICO 2 RP2350"
 			(at 539.75 270.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key_PN" "2648-SC1631CT-ND"
+			(at 539.75 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "2648-SC1631CT-ND"
+			(at 539.75 218.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Raspberry Pi"
+			(at 539.75 218.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28627,8 +28897,35 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Versatile and inexpensive microcontroller module powered by RP2040 dual-core Arm Cortex-M0+ processor up to 133 MHz, 264kB SRAM, 2MB QSPI flash; also supports Raspberry Pi Pico 2"
+		(property "Description" "RASPBERRY PI PICO 2 RP2350"
 			(at 133.35 280.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key_PN" "2648-SC1631CT-ND"
+			(at 133.35 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "2648-SC1631CT-ND"
+			(at 133.35 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Raspberry Pi"
+			(at 133.35 228.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29265,7 +29562,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
+		(property "Description" "CARD EJECTOR PCB 1.13\" .063\" WHT"
 			(at 547.37 360.68 0)
 			(effects
 				(font
@@ -29275,6 +29572,24 @@
 			)
 		)
 		(property "Digi-Key_PN" "492-1025-ND"
+			(at 547.37 360.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CP-26 WE"
+			(at 547.37 360.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Bivar Inc."
 			(at 547.37 360.68 0)
 			(effects
 				(font
@@ -30189,7 +30504,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "8-Bit Single-Supply Bus Transceiver With 5V tolerant input voltage and 3-State Outputs 24mA, TSSOP-20"
+		(property "Description" "IC TXRX NON-INVERT 3.6V 20-TSSOP"
 			(at 80.01 257.81 0)
 			(effects
 				(font
@@ -30199,6 +30514,24 @@
 			)
 		)
 		(property "Digi-Key_PN" "1727-4041-1-ND"
+			(at 80.01 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "74LVCH245APW,118"
+			(at 80.01 257.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Nexperia USA Inc."
 			(at 80.01 257.81 0)
 			(effects
 				(font
@@ -30638,7 +30971,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/catalog/mlcc_commercial_general_en.pdf"
 			(at 279.4 347.98 0)
 			(effects
 				(font
@@ -30647,7 +30980,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "22UF 35V X5R"
+		(property "Description" "CAP CER 22UF 35V X5R 0805"
 			(at 279.4 347.98 0)
 			(effects
 				(font
@@ -30665,7 +30998,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "C2012X5R1V226M125AC"
 			(at 279.4 347.98 0)
 			(effects
 				(font
@@ -30674,7 +31007,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" ""
+		(property "Manufacturer" "TDK"
 			(at 279.4 347.98 0)
 			(effects
 				(font
@@ -31880,7 +32213,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 207.01 201.93 0)
 			(effects
 				(font
@@ -32049,7 +32382,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "8-Bit Single-Supply Bus Transceiver With 5V tolerant input voltage and 3-State Outputs 24mA, TSSOP-20"
+		(property "Description" "IC TXRX NON-INVERT 3.6V 20-TSSOP"
 			(at 215.9 224.79 0)
 			(effects
 				(font
@@ -32059,6 +32392,24 @@
 			)
 		)
 		(property "Digi-Key_PN" "1727-4041-1-ND"
+			(at 215.9 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "74LVCH245APW,118"
+			(at 215.9 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Nexperia USA Inc."
 			(at 215.9 224.79 0)
 			(effects
 				(font
@@ -32366,7 +32717,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://look.ams-osram.com/m/2da6f2ceeebf8fac/original/LG-R971.pdf"
 			(at 140.97 350.52 0)
 			(effects
 				(font
@@ -32375,7 +32726,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode, filled shape"
+		(property "Description" "LED GREEN DIFFUSED 0805 SMD"
 			(at 140.97 350.52 0)
 			(effects
 				(font
@@ -32386,6 +32737,33 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 139.3825 346.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key_PN" "475-LGR971-KN-1CT-ND"
+			(at 140.97 350.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "LG R971-KN-1-0-20-R18"
+			(at 140.97 350.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "ams-OSRAM USA INC."
+			(at 140.97 350.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33068,7 +33446,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "8-Bit Single-Supply Bus Transceiver With 5V tolerant input voltage and 3-State Outputs 24mA, TSSOP-20"
+		(property "Description" "IC TXRX NON-INVERT 3.6V 20-TSSOP"
 			(at 353.06 264.16 0)
 			(effects
 				(font
@@ -33078,6 +33456,24 @@
 			)
 		)
 		(property "Digi-Key_PN" "1727-4041-1-ND"
+			(at 353.06 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "74LVCH245APW,118"
+			(at 353.06 264.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Nexperia USA Inc."
 			(at 353.06 264.16 0)
 			(effects
 				(font
@@ -33258,7 +33654,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 69.85 196.85 0)
 			(effects
 				(font
@@ -33524,8 +33920,35 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Versatile and inexpensive microcontroller module powered by RP2040 dual-core Arm Cortex-M0+ processor up to 133 MHz, 264kB SRAM, 2MB QSPI flash; also supports Raspberry Pi Pico 2"
+		(property "Description" "RASPBERRY PI PICO 2 RP2350"
 			(at 269.24 285.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key_PN" "2648-SC1631CT-ND"
+			(at 269.24 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "2648-SC1631CT-ND"
+			(at 269.24 233.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Raspberry Pi"
+			(at 269.24 233.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33707,7 +34130,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "8-Bit Single-Supply Bus Transceiver With 5V tolerant input voltage and 3-State Outputs 24mA, TSSOP-20"
+		(property "Description" "IC TXRX NON-INVERT 3.6V 20-TSSOP"
 			(at 452.12 100.33 0)
 			(effects
 				(font
@@ -33717,6 +34140,24 @@
 			)
 		)
 		(property "Digi-Key_PN" "1727-4041-1-ND"
+			(at 452.12 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "74LVCH245APW,118"
+			(at 452.12 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Nexperia USA Inc."
 			(at 452.12 100.33 0)
 			(effects
 				(font
@@ -33839,7 +34280,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "8-Bit Single-Supply Bus Transceiver With 5V tolerant input voltage and 3-State Outputs 24mA, TSSOP-20"
+		(property "Description" "IC TXRX NON-INVERT 3.6V 20-TSSOP"
 			(at 215.9 262.89 0)
 			(effects
 				(font
@@ -33849,6 +34290,24 @@
 			)
 		)
 		(property "Digi-Key_PN" "1727-4041-1-ND"
+			(at 215.9 262.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "74LVCH245APW,118"
+			(at 215.9 262.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Nexperia USA Inc."
 			(at 215.9 262.89 0)
 			(effects
 				(font
@@ -34167,7 +34626,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "8-Bit Single-Supply Bus Transceiver With 5V tolerant input voltage and 3-State Outputs 24mA, TSSOP-20"
+		(property "Description" "IC TXRX NON-INVERT 3.6V 20-TSSOP"
 			(at 486.41 247.65 0)
 			(effects
 				(font
@@ -34177,6 +34636,24 @@
 			)
 		)
 		(property "Digi-Key_PN" "1727-4041-1-ND"
+			(at 486.41 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "74LVCH245APW,118"
+			(at 486.41 247.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Nexperia USA Inc."
 			(at 486.41 247.65 0)
 			(effects
 				(font
@@ -34635,7 +35112,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "8-Bit Single-Supply Bus Transceiver With 5V tolerant input voltage and 3-State Outputs 24mA, TSSOP-20"
+		(property "Description" "IC TXRX NON-INVERT 3.6V 20-TSSOP"
 			(at 215.9 300.99 0)
 			(effects
 				(font
@@ -34645,6 +35122,24 @@
 			)
 		)
 		(property "Digi-Key_PN" "1727-4041-1-ND"
+			(at 215.9 300.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "74LVCH245APW,118"
+			(at 215.9 300.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Nexperia USA Inc."
 			(at 215.9 300.99 0)
 			(effects
 				(font
@@ -34832,7 +35327,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "8-Bit Single-Supply Bus Transceiver With 5V tolerant input voltage and 3-State Outputs 24mA, TSSOP-20"
+		(property "Description" "IC TXRX NON-INVERT 3.6V 20-TSSOP"
 			(at 486.41 209.55 0)
 			(effects
 				(font
@@ -34842,6 +35337,24 @@
 			)
 		)
 		(property "Digi-Key_PN" "1727-4041-1-ND"
+			(at 486.41 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "74LVCH245APW,118"
+			(at 486.41 209.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Nexperia USA Inc."
 			(at 486.41 209.55 0)
 			(effects
 				(font
@@ -35022,7 +35535,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.koaspeer.com/pdfs/RC.pdf"
 			(at 280.67 49.53 0)
 			(effects
 				(font
@@ -35031,7 +35544,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "test point"
+		(property "Description" "PC TEST POINT"
+			(at 275.59 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key_PN" "2019-RCWCTECT-ND"
+			(at 275.59 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RCWCTE"
+			(at 275.59 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KOA Speer Electronics, Inc."
 			(at 275.59 49.53 0)
 			(effects
 				(font
@@ -35237,7 +35777,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "8-Bit Single-Supply Bus Transceiver With 5V tolerant input voltage and 3-State Outputs 24mA, TSSOP-20"
+		(property "Description" "IC TXRX NON-INVERT 3.6V 20-TSSOP"
 			(at 80.01 295.91 0)
 			(effects
 				(font
@@ -35247,6 +35787,24 @@
 			)
 		)
 		(property "Digi-Key_PN" "1727-4041-1-ND"
+			(at 80.01 295.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "74LVCH245APW,118"
+			(at 80.01 295.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Nexperia USA Inc."
 			(at 80.01 295.91 0)
 			(effects
 				(font
@@ -35358,7 +35916,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
 			(at 344.17 203.2 0)
 			(effects
 				(font
@@ -35603,7 +36161,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "8-Bit Single-Supply Bus Transceiver With 5V tolerant input voltage and 3-State Outputs 24mA, TSSOP-20"
+		(property "Description" "IC TXRX NON-INVERT 3.6V 20-TSSOP"
 			(at 80.01 219.71 0)
 			(effects
 				(font
@@ -35613,6 +36171,24 @@
 			)
 		)
 		(property "Digi-Key_PN" "1727-4041-1-ND"
+			(at 80.01 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "74LVCH245APW,118"
+			(at 80.01 219.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Nexperia USA Inc."
 			(at 80.01 219.71 0)
 			(effects
 				(font
@@ -35865,7 +36441,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "8-Bit Single-Supply Bus Transceiver With 5V tolerant input voltage and 3-State Outputs 24mA, TSSOP-20"
+		(property "Description" "IC TXRX NON-INVERT 3.6V 20-TSSOP"
 			(at 353.06 302.26 0)
 			(effects
 				(font
@@ -35875,6 +36451,24 @@
 			)
 		)
 		(property "Digi-Key_PN" "1727-4041-1-ND"
+			(at 353.06 302.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "74LVCH245APW,118"
+			(at 353.06 302.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Nexperia USA Inc."
 			(at 353.06 302.26 0)
 			(effects
 				(font
@@ -36066,7 +36660,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
+		(property "Description" "CARD EJECTOR PCB 1.13\" .063\" WHT"
 			(at 547.37 353.06 0)
 			(effects
 				(font
@@ -36076,6 +36670,24 @@
 			)
 		)
 		(property "Digi-Key_PN" "492-1025-ND"
+			(at 547.37 353.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CP-26 WE"
+			(at 547.37 353.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Bivar Inc."
 			(at 547.37 353.06 0)
 			(effects
 				(font
@@ -36333,7 +36945,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "8-Bit Single-Supply Bus Transceiver With 5V tolerant input voltage and 3-State Outputs 24mA, TSSOP-20"
+		(property "Description" "IC TXRX NON-INVERT 3.6V 20-TSSOP"
 			(at 353.06 226.06 0)
 			(effects
 				(font
@@ -36343,6 +36955,24 @@
 			)
 		)
 		(property "Digi-Key_PN" "1727-4041-1-ND"
+			(at 353.06 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "74LVCH245APW,118"
+			(at 353.06 226.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Nexperia USA Inc."
 			(at 353.06 226.06 0)
 			(effects
 				(font
@@ -36530,8 +37160,35 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Versatile and inexpensive microcontroller module powered by RP2040 dual-core Arm Cortex-M0+ processor up to 133 MHz, 264kB SRAM, 2MB QSPI flash; also supports Raspberry Pi Pico 2"
+		(property "Description" "RASPBERRY PI PICO 2 RP2350"
 			(at 505.46 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key_PN" "2648-SC1631CT-ND"
+			(at 505.46 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "2648-SC1631CT-ND"
+			(at 505.46 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Raspberry Pi"
+			(at 505.46 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -37170,7 +37827,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip"
+		(property "Datasheet" "https://gct.co/files/drawings/usb4105.pdf"
 			(at 453.39 355.6 0)
 			(effects
 				(font
@@ -37179,7 +37836,34 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "USB Power-Only 24P Type-C Receptacle connector"
+		(property "Description" "CONN RCP USB2.0 TYP C 16P SMD RA"
+			(at 453.39 355.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digi-Key_PN" "2073-USB4105-GF-ACT-ND"
+			(at 453.39 355.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "USB4105-GF-A"
+			(at 453.39 355.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "GCT"
 			(at 453.39 355.6 0)
 			(effects
 				(font
@@ -37658,7 +38342,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR61A226ME44-01.pdf"
 			(at 311.15 347.98 0)
 			(effects
 				(font
@@ -37817,7 +38501,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP63300-AP63301.pdf"
 			(at 295.91 364.49 0)
 			(effects
 				(font
@@ -37826,7 +38510,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "DCDC CONV HV 3A BUCK TSOT26"
+		(property "Description" "IC REG BUCK ADJ 3A TSOT26"
 			(at 295.91 372.11 0)
 			(effects
 				(font
@@ -37835,7 +38519,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key_PN" "31-AP63300WU-7CT-ND"
+		(property "Digi-Key_PN" "31-AP63301WU-7CT-ND"
 			(at 295.91 372.11 0)
 			(effects
 				(font
@@ -37844,7 +38528,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "AP63300WU-7"
+		(property "MPN" "AP63301WU-7"
 			(at 295.91 372.11 0)
 			(effects
 				(font
