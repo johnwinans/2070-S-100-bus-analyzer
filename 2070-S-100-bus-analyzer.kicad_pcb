@@ -63297,7 +63297,7 @@
 			(justify left bottom)
 		)
 	)
-	(gr_text "PSI"
+	(gr_text "PHI"
 		(at 131.572 147.574 90)
 		(layer "F.SilkS")
 		(uuid "7c39fa13-8ef0-4904-a2a3-e10fe4032a7e")
