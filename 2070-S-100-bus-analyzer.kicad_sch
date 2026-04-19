@@ -19086,7 +19086,7 @@
 		)
 		(uuid "303bb8c5-7616-4734-9c1d-f4278090d289")
 	)
-	(label "~{pDBIN}"
+	(label "pDBIN"
 		(at 327.66 228.6 0)
 		(effects
 			(font
@@ -20936,7 +20936,7 @@
 		)
 		(uuid "edd8bdce-ee2e-42fe-b00a-ab2259448cb1")
 	)
-	(label "~{pDBIN}"
+	(label "pDBIN"
 		(at 229.87 101.6 180)
 		(effects
 			(font
