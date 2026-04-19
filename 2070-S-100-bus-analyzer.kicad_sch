@@ -20216,7 +20216,7 @@
 		)
 		(uuid "aaff4af1-33f1-4be2-928f-251ae634bd69")
 	)
-	(label "~{pSYNC}"
+	(label "pSYNC"
 		(at 190.5 313.69 0)
 		(effects
 			(font
@@ -21086,7 +21086,7 @@
 		)
 		(uuid "f804fc42-8ebf-4a5d-b0dc-14fdc63e6a41")
 	)
-	(label "~{pSYNC}"
+	(label "pSYNC"
 		(at 229.87 87.63 180)
 		(effects
 			(font
@@ -26426,7 +26426,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Keystone_5015_Micro_Mini"
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose"
 			(at 298.45 49.53 0)
 			(effects
 				(font
@@ -26435,7 +26435,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.koaspeer.com/pdfs/RC.pdf"
+		(property "Datasheet" ""
 			(at 298.45 49.53 0)
 			(effects
 				(font
@@ -26444,7 +26444,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "PC TEST POINT"
+		(property "Description" ""
 			(at 293.37 49.53 0)
 			(effects
 				(font
@@ -26453,7 +26453,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key_PN" "2019-RCWCTECT-ND"
+		(property "Digi-Key_PN" ""
 			(at 293.37 49.53 0)
 			(effects
 				(font
@@ -26462,7 +26462,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RCWCTE"
+		(property "MPN" ""
 			(at 293.37 49.53 0)
 			(effects
 				(font
@@ -26471,7 +26471,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "KOA Speer Electronics, Inc."
+		(property "Manufacturer" ""
 			(at 293.37 49.53 0)
 			(effects
 				(font
@@ -35526,7 +35526,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Keystone_5015_Micro_Mini"
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5010-5014_Multipurpose"
 			(at 280.67 49.53 0)
 			(effects
 				(font
@@ -35535,7 +35535,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.koaspeer.com/pdfs/RC.pdf"
+		(property "Datasheet" ""
 			(at 280.67 49.53 0)
 			(effects
 				(font
@@ -35544,7 +35544,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "PC TEST POINT"
+		(property "Description" ""
 			(at 275.59 49.53 0)
 			(effects
 				(font
@@ -35553,7 +35553,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key_PN" "2019-RCWCTECT-ND"
+		(property "Digi-Key_PN" ""
 			(at 275.59 49.53 0)
 			(effects
 				(font
@@ -35562,7 +35562,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RCWCTE"
+		(property "MPN" ""
 			(at 275.59 49.53 0)
 			(effects
 				(font
@@ -35571,7 +35571,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "KOA Speer Electronics, Inc."
+		(property "Manufacturer" ""
 			(at 275.59 49.53 0)
 			(effects
 				(font
