@@ -26453,7 +26453,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key_PN" ""
+		(property "Digi-Key_PN" "2019-RCWCTECT-ND"
 			(at 293.37 49.53 0)
 			(effects
 				(font
@@ -28042,7 +28042,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key_PN" ""
+		(property "Digi-Key_PN" "311-2.20KHRCT-ND"
 			(at 411.48 36.83 0)
 			(effects
 				(font
@@ -33036,7 +33036,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key_PN" ""
+		(property "Digi-Key_PN" "CR0603-FX-510ELFCT-ND"
 			(at 473.71 360.68 0)
 			(effects
 				(font
@@ -33766,7 +33766,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key_PN" ""
+		(property "Digi-Key_PN" "CR0603-FX-510ELFCT-ND"
 			(at 473.71 363.22 0)
 			(effects
 				(font
@@ -35553,7 +35553,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digi-Key_PN" ""
+		(property "Digi-Key_PN" "2019-RCWCTECT-ND"
 			(at 275.59 49.53 0)
 			(effects
 				(font
