@@ -18,6 +18,7 @@
 *    USA
 *
 * A proof of concept of a C app to initiate captures on a simple PICO-based logic analyzer.
+*
 * See:
 * https://github.com/johnwinans/2070-S-100-bus-analyzer
 * https://github.com/johnwinans/guzmanb_logicanalyzer
@@ -58,6 +59,7 @@
 // CMD 6 = stop blinking
 //
 
+static int debug = 0;
 
 /**
 *****************************************************************************/
@@ -119,12 +121,15 @@ static int readChar( int port, uint32_t usec )
 
 //#define DEBUG_IO
 #ifdef DEBUG_IO
-    printf("Read %2.2X '%c' status=%zd\r\n", i, ch, rc);
+	if ( debug ) {
+    	printf("Read %2.2X '%c' status=%zd\r\n", i, ch, rc);
+	}
 #endif
 
     if (rc == 0 || rc == -1)
     {
-        fprintf(stderr, "EOF\r\n");
+		if ( debug )
+        	fprintf(stderr, "EOF\r\n");
         return(-1);
     }
 
@@ -141,7 +146,9 @@ static ssize_t safewrite(int fd, void *buf, size_t count)
     size_t len = 0;
     char *b = (char*)buf;
 
-	utilHexdumpBuf( stdout, buf, count );
+	if ( debug ) {
+		utilHexdumpBuf( stdout, buf, count );
+	}
 
     while( (len<count) && (s = write(fd, &b[len], count-len)) > 0 )
         len+=s;
@@ -178,18 +185,20 @@ void dump_response( int port ) {
 		pb += 1;
 		resid -= 1;
 #if 0
-		if ( *(pb-1) == '\n' ) {
-			printf("%p:\n", pdump);
-			utilHexdumpBuf( stdout, pdump, pb-pdump );
-			pdump = pb;
+		if ( debug ) {
+			if ( *(pb-1) == '\n' ) {
+				printf("%p:\n", pdump);
+				utilHexdumpBuf( stdout, pdump, pb-pdump );
+				pdump = pb;
+			}
 		}
 #endif
 	}
 
-#if 1
-	printf("Response:\n");
-	utilHexdumpBuf( stdout, dump_buf, pb-dump_buf );
-#endif
+	if ( debug ) {
+		printf("Response:\n");
+		utilHexdumpBuf( stdout, dump_buf, pb-dump_buf );
+	}
 }
 
 /**
@@ -215,7 +224,7 @@ size_t load_response( int port, char *buf, size_t len, bool dump )
 		pb += 1;
 		resid -= 1;
 	}
-	if ( dump ) {
+	if ( debug ) {
 		printf("Response: (rc:%d)\n", rc);
 		utilHexdumpBuf( stdout, buf, pb-buf );
 	}
@@ -236,10 +245,15 @@ void req_id( int port )
 	msg[3] = 0xAA;
 	msg[4] = 0x55;
 
-	printf("Sending:\n");
+	if ( debug ) {
+		printf("Sending:\n");
+	}
 
 	safewrite( port, msg, 5 );
-	dump_response( port );
+
+	if ( debug ) {
+		dump_response( port );
+	}
 	//load_response( port, dump_buf, sizeof(dump_buf), 1 );
 }
 
@@ -253,7 +267,9 @@ int req_simple( int port, capture_request* cr )
 	char hdr[] = { 0x55, 0xAA, 0x01 };
 	char trl[] = { 0xAA, 0x55 };
 
-	printf("Sending:%d\n", (int)(sizeof(hdr)+sizeof(*cr)+sizeof(trl)));
+	if ( debug ) {
+		printf("Sending:%d\n", (int)(sizeof(hdr)+sizeof(*cr)+sizeof(trl)));
+	}
 
 	// XXX properly encode the cr data message here!!!
 
@@ -291,7 +307,9 @@ int req_simple( int port, capture_request* cr )
 	// the bytes to receive are the length scaled by the cr->captureMode
 	uint32_t len = ((uint32_t)dump_buf[0]) | ((uint32_t)dump_buf[1])<<8 | ((uint32_t)dump_buf[2])<<16 | ((uint32_t)dump_buf[3])<<24;
 
-	printf("Got %d bytes (expected %zu)\n", len, response_len-4);
+	if ( debug ) {
+		printf("Want %d bytes (got %zu)\n", 4+len*sample_size, response_len);
+	}
 
 	char *data = dump_buf+4;
 
@@ -320,11 +338,15 @@ int main(int argc, char **argv)
 	int				c;
 
 	extern char *optarg;
-	while((c = getopt(argc, argv, "t:")) != -1) {
+	while((c = getopt(argc, argv, "dt:")) != -1) {
 
 		switch (c) {
 		case 't':
 			tty = optarg;
+			break;
+
+		case 'd':
+			debug = 1;
 			break;
 
 		default:
@@ -339,13 +361,28 @@ int main(int argc, char **argv)
 		exit(1);
 	}
 
+
+
+    // Trigger definition in the form of "TriggerType:(Edge, Fast or Complex),Channel:(base trigger channel),Value:(binary string indicating each trigger chanel state)".
+	// consider changing this to simply: (Edge|Fast|Complex),5,xxxxxx1x1x001
+	// capture -t /dev/ttyACM0      1000000 1:SDA,2:SCL 512 1024 0 TriggerType:Edge,Base:5,Value:1
+	// capture -i 192.168.0.45:4545 1000000 1,2,3,4     512 1024 0 TriggerType:Complex,Base:5,Value:1101
+
+	// ./capture 10000000 1,2,3,4,5,6,7 512 1024 0 Edge,5,xxxxxx1x1x001
+
+
 	capture_request	cr = { 0 };
 
     // Desired sampling frequency.
 	cr.frequency = strtol( argv[optind++], NULL, 10 );
 
-    // List of channels to capture (channels separated by comma, can contain a name adding a semicolon after the channel number).
 	// XXX
+    // List of channels to capture (channels separated by comma, can contain a name adding a semicolon after the channel number).
+	// map each output column to the associated input chennel
+	// for now, make it 1:1
+	for ( int i=0; i<32; ++i )
+		cr.channels[i] = i;
+	cr.channelCount = 16;
 	++optind;
 
     // Number of samples to capture before the trigger.
@@ -357,15 +394,6 @@ int main(int argc, char **argv)
     // Number of bursts to capture (0 or 1 to disable burst mode).
 	cr.loopCount = strtol( argv[optind++], NULL, 10 );
 
-    // Trigger definition in the form of "TriggerType:(Edge, Fast or Complex),Channel:(base trigger channel),Value:(binary string indicating each trigger chanel state)".
-	// consider changing this to simply: (Edge|Fast|Complex),xxxxxx1x1x001
-	// XXX
-
-
-	// capture -t /dev/ttyACM0      1000000 1:SDA,2:SCL 512 1024 0 TriggerType:Edge,Base:5,Value:1
-	// capture -i 192.168.0.45:4545 1000000 1,2,3,4     512 1024 0 TriggerType:Complex,Base:5,Value:1101
-
-	// ./capture 10000000 1,2,3,4,5,6,7 512 1024 0 Edge,xxxxxx1x1x001
 
 
 
@@ -381,17 +409,18 @@ int main(int argc, char **argv)
 
 	req_id( port );
 
+
+
+
 	// a quick hack that I hope will not include any 0x55 or 0xaa bytes
 	cr.triggerType = 0;			// Edge (simple)
 	cr.trigger = 0;
 	cr.inverted = 1;
 	cr.triggerValue = 0x0000;
 
-	for ( int i=0; i<32; ++i )
-		cr.channels[i] = 0;
-
-	cr.channelCount = 16;
 	cr.measure = 0;
+
+	// this should be determined by the number of channels that are to be sampled
 	cr.captureMode = 1;		// 0 = 8bit, 1=16-bit, 2=32-bit
 
 	req_simple( port, &cr );
