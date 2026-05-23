@@ -84,8 +84,11 @@ static void setControlLines(int port, int dtr, int rts)
 
     tcsetattr(port, TCSANOW, &tty);
 
-    int flags = TIOCM_DTR | TIOCM_RTS;
-    ioctl(port, TIOCMBIS, &flags); // Set bits
+	int flags;
+	ioctl(port, TIOCMGET, &flags);
+	flags = dtr ? flags | TIOCM_DTR : flags & ~TIOCM_DTR;
+	flags = rts ? flags | TIOCM_RTS : flags & ~TIOCM_RTS;
+   	ioctl(port, TIOCMBIS, &flags);
 }
 
 
