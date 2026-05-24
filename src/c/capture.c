@@ -75,20 +75,17 @@ static void setControlLines(int port, int dtr, int rts)
 {
 	struct termios tty;
 
-    tcgetattr(port, &tty);
+    tcgetattr( port, &tty );
 
-    cfmakeraw(&tty); // Sets raw mode, 8N1, etc.
+    cfmakeraw( &tty ); // Sets raw mode, 8N1, etc.
 
     tty.c_cflag &= ~CRTSCTS; // Disable hardware flow control
     tty.c_cflag |= CLOCAL;  // Ignore modem control lines
 
-    tcsetattr(port, TCSANOW, &tty);
+    tcsetattr( port, TCSANOW, &tty );
 
-	int flags;
-	ioctl(port, TIOCMGET, &flags);
-	flags = dtr ? flags | TIOCM_DTR : flags & ~TIOCM_DTR;
-	flags = rts ? flags | TIOCM_RTS : flags & ~TIOCM_RTS;
-   	ioctl(port, TIOCMBIS, &flags);
+	ioctl( port, dtr ? TIOCMBIS : TIOCMBIC, TIOCM_DTR );
+	ioctl( port, rts ? TIOCMBIS : TIOCMBIC, TIOCM_RTS );
 }
 
 
