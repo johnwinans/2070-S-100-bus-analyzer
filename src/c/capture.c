@@ -316,11 +316,11 @@ int req_simple( int port, capture_request* cr )
 	// render each row
 	for (int i=0; i < len; ++i) {
 		int offset = i * sample_size;
-		for (int j=0; j<sample_size; ++j) {
+		for (int j=sample_size-1; j>-1; --j) {
 			uint32_t val = data[offset+sample_size-j-1];
 			for (int k=0; k<8; ++k ) {
-				printf("%s%d", (k>0 || j>0) ? "," : "", (val&0x80)!=0 );
-				val <<= 1;
+				printf("%s%d", (k>0 || j<sample_size-1) ? "," : "", (val&0x01)!=0 );
+				val >>= 1;
 			}
 		}
 		printf("\n");
