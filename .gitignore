@@ -60,3 +60,5 @@ fp-info-cache
 
 *-backups
 *.swp
+gerbers
+*.zip
