@@ -142,9 +142,9 @@ static int readChar( int port, uint32_t usec )
 ***************************************************************************/
 static ssize_t safewrite(int fd, void *buf, size_t count)
 {
-    ssize_t s;
-    size_t len = 0;
-    char *b = (char*)buf;
+    ssize_t		s;
+    size_t 		len = 0;
+    uint8_t		*b = (uint8_t*)buf;
 
 	if ( debug ) {
 		utilHexdumpBuf( stdout, buf, count );
@@ -160,6 +160,28 @@ static ssize_t safewrite(int fd, void *buf, size_t count)
     }
 
     return len;
+}
+
+/**
+* Escape and write the requested count bytes.
+* For now, do a simple copy slob-job.
+***************************************************************************/
+static ssize_t safewriteEsc(int fd, void *buf, size_t count)
+{
+	uint8_t 	*b = (uint8_t*)buf;
+	uint8_t		clean[count*2];		// worst case, escape everything
+	size_t 		ic = 0;				// clean counter
+
+	for (size_t ib=0; ib<count; ++ib) {
+		if (b[ib] == 0xf0 || b[ib] == 0x55 || b[ib] == 0xaa) {
+			clean[ic++] = 0xf0;
+			clean[ic++] = b[ib]^0xf0;
+		} else {
+			clean[ic++] = b[ib];
+		}
+	}
+
+	return safewrite(fd, clean, ic);
 }
 
 
@@ -205,7 +227,7 @@ void dump_response( int port ) {
 ***************************************************************************/
 size_t load_response( int port, char *buf, size_t len, bool dump )
 {
-	size_t  resid = sizeof(dump_buf);
+	size_t  resid = len;
 	char    *pb = buf;
 
 	int rc = 0;
@@ -260,7 +282,6 @@ void req_id( int port )
 
 /**
 * Send the given capture_request.
-* @bug need to escape the cr!!!
 ***************************************************************************/
 int req_simple( int port, capture_request* cr )
 {
@@ -271,25 +292,26 @@ int req_simple( int port, capture_request* cr )
 		printf("Sending:%d\n", (int)(sizeof(hdr)+sizeof(*cr)+sizeof(trl)));
 	}
 
-	// XXX properly encode the cr data message here!!!
-
 	safewrite( port, hdr, sizeof(hdr) );
-	safewrite( port, cr, sizeof(*cr) );
+	safewriteEsc( port, cr, sizeof(*cr) );
 	safewrite( port, trl, sizeof(trl) );
 
 	// read the ACK
 	// XXX Hack for now using a timeout
 	// XXX Need a better protocol with proper framing.
-	if ( load_response( port, dump_buf, sizeof(dump_buf), 1 ) <= 0 )
+	ssize_t rlen;
+	//if ( (rlen = load_response( port, dump_buf, sizeof(dump_buf), 1 )) <= 0 )
+	if ( (rlen = load_response( port, dump_buf, 16, 1 )) <= 0 )	// this is ass
 		return -1;
 	//dump_response( port );
+	//safewrite(1, dump_buf, rlen);
 
 	// wait for and read the capture response
 
 	// v6_5 uses 0=1, 1=2 or 2=4 byte sizes 
 	uint32_t sample_size = 1 << cr->captureMode;
 
-	size_t response_len = 4+sample_size*(cr->preSamples+cr->postSamples+cr->loopCount);
+	size_t response_len = 4+sample_size*(cr->preSamples+cr->postSamples*(cr->loopCount+1));
 
 	int rc = 0;
 	while ( rc == 0 ) {
@@ -308,7 +330,7 @@ int req_simple( int port, capture_request* cr )
 	uint32_t len = ((uint32_t)dump_buf[0]) | ((uint32_t)dump_buf[1])<<8 | ((uint32_t)dump_buf[2])<<16 | ((uint32_t)dump_buf[3])<<24;
 
 	if ( debug ) {
-		printf("Want %d bytes (got %zu)\n", 4+len*sample_size, response_len);
+		printf("len=%d, Want %d bytes (got %zu)\n", len, 4+len*sample_size, response_len);
 	}
 
 	char *data = dump_buf+4;
@@ -330,7 +352,7 @@ int req_simple( int port, capture_request* cr )
 }
 
 /**
-***************************************************************************/
+ ***************************************************************************/
 int main(int argc, char **argv)
 {
 	const char 		*tty = "/dev/ttyACM0";
@@ -341,17 +363,17 @@ int main(int argc, char **argv)
 	while((c = getopt(argc, argv, "dt:")) != -1) {
 
 		switch (c) {
-		case 't':
-			tty = optarg;
-			break;
+			case 't':
+				tty = optarg;
+				break;
 
-		case 'd':
-			debug = 1;
-			break;
+			case 'd':
+				debug = 1;
+				break;
 
-		default:
-			usage();
-			exit(1);
+			default:
+				usage();
+				exit(1);
 		}
 	}
 
@@ -363,8 +385,8 @@ int main(int argc, char **argv)
 
 
 
-    // Trigger definition in the form of "TriggerType:(Edge, Fast or Complex),Channel:(base trigger channel),Value:(binary string indicating each trigger chanel state)".
-	// consider changing this to simply: (Edge|Fast|Complex),5,xxxxxx1x1x001
+	// Trigger definition in the form of "TriggerType:(Edge, Fast or Complex),Channel:(base trigger channel),Value:(binary string indicating each trigger chanel state)".
+	// consider changing this to simply: (Edge|Fast|Complex),5,xxxxxx1x1x001 (note that x would need a mask)
 	// capture -t /dev/ttyACM0      1000000 1:SDA,2:SCL 512 1024 0 TriggerType:Edge,Base:5,Value:1
 	// capture -i 192.168.0.45:4545 1000000 1,2,3,4     512 1024 0 TriggerType:Complex,Base:5,Value:1101
 
@@ -373,25 +395,25 @@ int main(int argc, char **argv)
 
 	capture_request	cr = { 0 };
 
-    // Desired sampling frequency.
+	// Desired sampling frequency.
 	cr.frequency = strtol( argv[optind++], NULL, 10 );
 
 	// XXX
-    // List of channels to capture (channels separated by comma, can contain a name adding a semicolon after the channel number).
-	// map each output column to the associated input chennel
+	// List of channels to capture (channels separated by comma, can contain a name adding a semicolon after the channel number).
+	// map each output column to the associated input channel
 	// for now, make it 1:1
 	for ( int i=0; i<32; ++i )
 		cr.channels[i] = i;
 	cr.channelCount = 16;
 	++optind;
 
-    // Number of samples to capture before the trigger.
+	// Number of samples to capture before the trigger.
 	cr.preSamples = strtol( argv[optind++], NULL, 10 );
 
-    // Number of samples to capture after the trigger.
+	// Number of samples to capture after the trigger.
 	cr.postSamples = strtol( argv[optind++], NULL, 10 );
 
-    // Number of bursts to capture (0 or 1 to disable burst mode).
+	// Number of bursts to capture (0 to disable burst mode).
 	cr.loopCount = strtol( argv[optind++], NULL, 10 );
 
 
@@ -409,10 +431,8 @@ int main(int argc, char **argv)
 
 	req_id( port );
 
-
-
-
-	// a quick hack that I hope will not include any 0x55 or 0xaa bytes
+#if 1
+	// a quick hack
 	cr.triggerType = 0;			// Edge (simple)
 	cr.trigger = 0;
 	cr.inverted = 1;
@@ -423,7 +443,9 @@ int main(int argc, char **argv)
 	// this should be determined by the number of channels that are to be sampled
 	cr.captureMode = 1;		// 0 = 8bit, 1=16-bit, 2=32-bit
 
+	(void)cr;
 	req_simple( port, &cr );
+#endif
 
 	close( port );
 	exit( 0 );
