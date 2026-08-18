@@ -654,7 +654,7 @@ int main()
     sleep_ms(1000);
 
     //Clear message buffer
-    memset(messageBuffer, 0, 128);
+    memset(messageBuffer, 0, MESSAGE_BUFFER_SIZE);
 
     //Configure led
     INIT_LED();
