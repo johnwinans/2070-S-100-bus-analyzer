@@ -772,10 +772,6 @@ int main()
                 LED_OFF();
                 sleep_ms(100);
 
-#if 0
-				LED_ON();
-				sleep_ms(100);
-#else
                 //Check for cancel request
                 if(processCancel())
                 {
@@ -792,7 +788,6 @@ int main()
                     #endif
                     sleep_ms(100);
                 }
-#endif
             }
         }
         else		// not capturing
