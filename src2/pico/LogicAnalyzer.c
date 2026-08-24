@@ -151,7 +151,7 @@ void storeSettings(WIFI_SETTINGS* settings)
 /// @brief Transfer a buffer of data through USB using the TinyUSB CDC functions
 /// @param data Buffer of data to transfer
 /// @param len Length of the buffer
-void cdc_transfer(unsigned char* data, int len)
+static void cdc_transfer(unsigned char* data, int len)
 {
 
     int left = len;
@@ -191,7 +191,7 @@ void cdc_transfer(unsigned char* data, int len)
 /// @brief Sends a response message to the host application in string mode
 /// @param response The message to be sent (null terminated)
 /// @param toWiFi If true the message is sent to a WiFi endpoint, else to the USB connection through STDIO
-void sendResponse(const char* response, bool toWiFi)
+static void sendResponse(const char* response, bool toWiFi)
 {
     #ifdef USE_CYGW_WIFI
     if(toWiFi)
@@ -246,7 +246,7 @@ void wifi_transfer(unsigned char* data, int len)
 /// @param data The received data
 /// @param length Length of the data
 /// @param fromWiFi If true the message comes from a WiFi connection
-void processData(uint8_t* data, uint length, bool fromWiFi)
+static void processData(uint8_t* data, uint length, bool fromWiFi)
 {
     for(uint pos = 0; pos < length; pos++)
     {
@@ -479,7 +479,7 @@ void processData(uint8_t* data, uint length, bool fromWiFi)
 /// @brief Receive and process USB data from the host application
 /// @param skipProcessing If true the received data is not processed (used for cleanup)
 /// @return True if anything is received, false if not
-bool processUSBInput(bool skipProcessing)
+static bool processUSBInput(bool skipProcessing)
 {
     //Try to get char
     uint data = getchar_timeout_us(0);
@@ -500,14 +500,14 @@ bool processUSBInput(bool skipProcessing)
 #ifdef USE_CYGW_WIFI
 
 /// @brief Purges any pending data in the USB input
-void purgeUSBData()
+static void purgeUSBData()
 {
     while(getchar_timeout_us(0) != PICO_ERROR_TIMEOUT);
 }
 
 /// @brief Send a string response with the power status
 /// @param status Status received from the WiFi core
-void sendPowerStatus(POWER_STATUS* status)
+static void sendPowerStatus(POWER_STATUS* status)
 {
     char buffer[32];
     memset(buffer, 0, 32);
@@ -520,7 +520,7 @@ void sendPowerStatus(POWER_STATUS* status)
 
 /// @brief Callback for the WiFi event queue
 /// @param event Received event
-void wifiEvent(void* event)
+static void wifiEvent(void* event)
 {
     EVENT_FROM_WIFI* wEvent = (EVENT_FROM_WIFI*)event;
 
@@ -557,7 +557,7 @@ void wifiEvent(void* event)
 /// @brief Receives and processes input from the host application (when connected through WiFi)
 /// @param skipProcessing /// @param skipProcessing If true the received data is not processed (used for cleanup)
 /// @return True if anything is received, false if not
-bool processWiFiInput(bool skipProcessing)
+static bool processWiFiInput(bool skipProcessing)
 {
     bool res = event_has_events(&wifiToFrontend);
 
@@ -577,7 +577,7 @@ bool processWiFiInput(bool skipProcessing)
 #endif
 
 /// @brief Process input data from the host application if it is available
-void processInput()
+static void processInput()
 {
     #ifdef USE_CYGW_WIFI
         if(!usbDisabled)
@@ -591,7 +591,7 @@ void processInput()
 
 /// @brief Processes input data from the host application to check if there is any cancel capture request
 /// @return True if there was input data
-bool processCancel()
+static bool processCancel()
 {
     #ifdef USE_CYGW_WIFI
         if(!usbDisabled)
