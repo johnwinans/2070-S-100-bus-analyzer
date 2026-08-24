@@ -2,11 +2,11 @@
 
 A 120 channel S-100 bus logic analyzer
 
-This project is based on the open source ["guzmanb" Logic Analyzer](https://github.com/gusmanb/logicanalyzer) project from Agustín Gimenez Bernad
+This project is based on the open source ["gusmanb" Logic Analyzer](https://github.com/gusmanb/logicanalyzer) project from Agustín Gimenez Bernad
 
 I have started a [YouTube playlist](https://www.youtube.com/playlist?list=PL3by7evD3F51xCtWdVP3EZzuDttMwDS_U) of videos about this project and my testing of the board.
 
-By using the software from the gusmanb/logicanalyzer repo, a 120 channel logic analyzer can be assembled by installing 5 Raspberry PI PICO boards on this S-100 card and accessed using a USB cables to a PC and/or WiFi as described in the above guzmanb github project Wiki.
+By using the software from the gusmanb/logicanalyzer repo, a 120 channel logic analyzer can be assembled by installing 5 Raspberry PI PICO boards on this S-100 card and accessed using a USB cables to a PC and/or WiFi as described in the above gusmanb github project Wiki.
 
 Here is a [CSV of the project BOM](./2070-S-100-bus-analyzer.csv) with Dikikey order numbers. 
 
