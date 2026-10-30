@@ -30,3 +30,10 @@ Here is a link to the type that I use for most everything: https://a.co/d/02YRvq
 - Add special headers for pins 20 and 70 to make their purpose more obvious.
 - Change to use thru-hole ground test-points for easier use with gator-clips.
 - Use larger fonts and better-center the signal names.
+
+# Ordering from JLCPCB
+
+Last time I ordered these, right or wrong, I used these JLCPCB settings:
+
+![Ordering Details](./docs/jlcpcb_specs.png)
+
