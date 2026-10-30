@@ -8,10 +8,10 @@ I have started a [YouTube playlist](https://www.youtube.com/playlist?list=PL3by7
 
 By using the software from the gusmanb/logicanalyzer repo, a 120 channel logic analyzer can be assembled by installing 5 Raspberry PI PICO boards on this S-100 card and accessed using a USB cables to a PC and/or WiFi as described in the above gusmanb github project Wiki.
 
-Here is a [CSV of the project BOM](./2070-S-100-bus-analyzer.csv) with Dikikey order numbers. 
+Here is a [CSV of the project BOM](./2070-S-100-bus-analyzer.csv) with Digikey order numbers. 
 
 NOTE: I used generic male-headers that I got on Amazon and snapped to length.  I only use gold-plated headers.  Anything else is annoying.
-Here is a link to the type that I use for most everything: https://a.co/d/02YRvqt7 (Hint: I snap them to length using a flat [Hakko Wire Cutters](https://a.co/d/055L9axg). Then use shunts to hold them in pairs, tripples, or whatever you need so they stay straight and aligned when soldering.)
+Here is a link to the type that I use for most everything: https://a.co/d/02YRvqt7 (Hint: I snap them to length using a flat [Hakko Wire Cutters](https://a.co/d/055L9axg). Then use shunts to hold them in pairs, triples, or whatever you need so they stay straight and aligned when soldering.)
 
 # Rev 1.0
 
